@@ -1,0 +1,49 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Model files (large - regenerate locally)
+models/random_forest.pkl
+models/label_encoder.pkl
+
+# Data files (user-generated)
+data/datasets/*.csv
+data/uploads/
+data/exports/
+
+# Keep folder structure
+!data/datasets/.gitkeep
+!data/uploads/.gitkeep
+!data/exports/.gitkeep
+!models/.gitkeep
+
+# Logs
+*.log
+nids.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/
+
+# Distribution
+dist/
+build/
+*.egg-info/

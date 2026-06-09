@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  nids:
+    build: .
+    container_name: nids-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    # NET_ADMIN + NET_RAW needed for live packet capture
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    network_mode: host   # Gives access to host interfaces for live capture
+    restart: unless-stopped
