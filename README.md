@@ -1,4 +1,4 @@
-# NIDS — Network Traffic Anomaly Detector.        
+# NIDS — Network Traffic Anomaly Detector.       
 
 > An ML-powered Network Intrusion Detection System built with Python, Streamlit, Scapy, and scikit-learn. Detects network threats in real time via live packet capture or offline PCAP analysis, with an interactive dark-themed dashboard.
 
